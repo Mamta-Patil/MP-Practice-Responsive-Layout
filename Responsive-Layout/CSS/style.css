@@ -13,7 +13,7 @@
 }
 body
 {
-  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/IMAGES/university.avif');
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/IMAGES/bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,7 +98,9 @@ font-size: 40px;
 .row
 {
     width:80%;
-    margin:55% auto;
+    margin-top:60%;
+   margin-left:10%;
+
 }
 .about-course
 {
@@ -109,7 +111,12 @@ font-size: 40px;
 {
     text-align:center;
 }
-.courses h2,p
+.courses h2
+{
+    color:red;
+    text-shadow: 0px 0px 10px rgb(188, 59, 59);
+}
+.courses p
 {
     color:black;
 } 
@@ -122,7 +129,7 @@ font-size: 40px;
     padding: 10px 10px;
     color:black;
     border-radius:7px;
-    box-shadow: 0px 0px 10px 5px rgb(205, 205, 246);
+    box-shadow: 0px 0px 20px 10px rgb(213, 213, 222);
 }
 .course-1 h3
 {
@@ -133,4 +140,67 @@ color:black;
 {
     color:black;
     padding:10px 10px;
+}
+.branches
+{
+    text-align: center;
+    margin-top: 5%;
+}
+.branches h2
+{
+    color:red;
+    text-shadow: 0px 0px 10px rgb(188, 59, 59);
+}
+.branches p
+{
+    color:black;
+} 
+.row1
+{
+    width:80%;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    margin-top: 5%;
+}
+.box1
+{
+    flex-basis: 30%;
+    position: relative;
+}
+.box1 img
+{
+    width:100%;
+    display:block;
+}
+.box1-contant
+{
+    position:absolute;
+    top:0%;
+    left:0%;
+    height:100%;
+    width:100%;
+    background-color: transparent;
+    transition: 0.5s;
+}
+.box1-contant:hover
+{
+    background-color: rgba(122,0,0,0.5);
+}
+
+.box1 .box1-contant h3
+{
+display: block;
+width:100%;
+position:absolute;
+text-align: center;
+bottom: 0%;
+color:white;
+opacity: 0;
+transition: 0.5s;
+}
+.box1-contant:hover h3,span
+{
+bottom: 50%;
+opacity: 1;
 }
